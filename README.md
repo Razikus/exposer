@@ -49,7 +49,9 @@ Any abuse of law will be reported & banned.
 
 If there will be too much abuses i will just close this service.
 
-If you want to have persistent domain in exposer.eu, or you want to connect your domain, please contact me on support@razniewski.eu - it cost 2€ per month.
+I'm not guaranting that it will be working for you. Also i will implement auto removing containers if there will be too much.
+
+If you want to have persistent domain in exposer.eu, or you want to connect your own domain, please contact me on support@razniewski.eu - it cost 2€ per month. Of course then I'm guaranting that nobody will override it.
 
 And of course - any donate is really approciated.
 
