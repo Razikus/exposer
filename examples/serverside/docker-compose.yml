@@ -1,0 +1,9 @@
+version: '2'
+services:
+  server:
+    image: razikus/exposerserver:1.0
+    ports:
+     - 8080:22
+     - 80:9999
+    environment:
+     - PASSWORD=supersecretpassword
