@@ -1,0 +1,23 @@
+version: '2'
+services:
+        gotty:
+                image: razikus/gotty:2.0.0-alpha.3
+                volumes:
+                - /:/mounted
+
+        exposer:
+                image: razikus/exposerclient:1.0
+                environment:
+                 # Setted in -e PASSWORD in server
+                 - PASSWORD=supersecretpassword
+                 # Setted in exposing of -p 80:9999
+                 - REMOTEPORT=*:9999
+                 # From address - in our case is gotty
+                 - FROM=gotty
+                 # From port - in our case is 8080 standard gotty address
+                 - FROMPORT=8080
+                 # Standard server address
+                 - SERVER=exposer@serveripaddress
+                 # Exposed with -p 8080:22 in server
+                 - SSHPORT=8080
+

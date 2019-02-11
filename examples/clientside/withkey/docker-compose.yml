@@ -1,0 +1,11 @@
+version: '2'
+services:
+        gotty:
+                image: razikus/gotty:2.0.0-alpha.3
+                volumes:
+                - /:/mounted
+
+        exposer:
+                image: razikus/exposerclient:1.0
+                environment:
+                 - KEY="SUl1T2JFenZGU2x3T2J4aU15R1g7Kjo5OTk5O2dvdHR5OzgwODA7ZXhwb3NlckB0ZXN0MTIuZXhwb3Nlci5ldTszMjg0NA=="

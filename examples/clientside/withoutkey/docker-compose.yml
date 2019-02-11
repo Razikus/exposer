@@ -1,0 +1,16 @@
+version: '2'
+services:
+        gotty:
+                image: razikus/gotty:2.0.0-alpha.3
+                volumes:
+                - /:/mounted
+
+        exposer:
+                image: razikus/exposerclient:1.0
+                environment:
+                 - PASSWORD=uNbWkiasrmXdUHxLwcdk
+                 - REMOTEPORT=*:9999
+                 - FROM=gotty
+                 - FROMPORT=8080
+                 - SERVER=exposer@test12.exposer.eu
+                 - SSHPORT=32841

@@ -1,0 +1,14 @@
+version: '2'
+services:
+        exposer:
+                image: razikus/exposerclient:1.0
+                network_mode: host
+                environment:
+                 - PASSWORD=IIuObEzvFSlwObxiMyGX
+                 - REMOTEPORT=*:9999
+                 - SERVER=exposer@test12.exposer.eu
+                 - SSHPORT=32844
+                 # Will expose localhost:8080 from current machine
+                 - FROM=localhost
+                 - FROMPORT=8081
+
