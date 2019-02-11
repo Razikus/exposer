@@ -62,6 +62,11 @@ https://www.buymeacoffee.com/razikus
 [<img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png">](https://www.buymeacoffee.com/razikus)
 
 
+Or donate over PayPal:
+https://paypal.me/arosoftware
+
+
+
 License
 ----
 
