@@ -1,1 +1,1 @@
-docker run --network=host 
+docker run --network=host -e PASSWORD=supersecretpassword -e SERVER=exposer@test12.exposer.eu -e SSHPORT=32844 -e REMOTEPORT="\*:9999" -e FROM=localhost -e FROMPORT=8081 --restart=always -d razikus/exposerclient:1.0
