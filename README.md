@@ -33,12 +33,16 @@ docker run --network=host -e PASSWORD=supersecretpassword -e SERVER=exposer@53.5
 ```
 This will try to expose service localhost:8081 from your network to public server 53.53.53.53 on port 9999. But 9999 was exposed to 80 in server container so the real exposure will be 53.53.53.53:80. Of course you can adjust it on what you want.
 
+More cases in client examples.
+
 # exposer.eu usage
 This is really simple service that i've builded for you to allow you expose the applications. 
 
 Go to page http://exposer.eu/test/80/localhost
 This will create for you a bunch of example command to expose on domain test.exposer.eu your http://localhost:80
 You can use then SSH command that is generated or just use docker command that i also provided.
+
+exposer.eu for now is working only with http requests. Don't worry - you can still expose your SSH with gotty (look at examples)
 
 Limitations: if somebody will choose the same domain as you it will be overriden.
 Any abuse of law will be reported & banned.
