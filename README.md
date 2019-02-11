@@ -1,5 +1,5 @@
 # exposer
-Expose any service to public with containers/pure ssh
+Expose your services without public ip!
 
 ---
 # TL;DR
