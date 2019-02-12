@@ -3,7 +3,7 @@ Expose your services without public ip!
 
 ---
 # TL;DR
-Exposer allows to expose your local/hided services in the internet.
+Exposer allows to expose your local/hidden services in the internet.
 The only requirement is to have internet connection, and from your host the host that you are exposing must be available.
 
 So for example - you have your device/soft that is exposing port 80, but you have no public ip on this device/can't share cause of hard router configuration, etc.
