@@ -37,6 +37,30 @@ This will try to expose service localhost:8081 from your network to public serve
 
 More cases in client examples.
 
+# How this works?
+[![N|Solid](https://i.imgur.com/1Su374o.png)](https://i.imgur.com/1Su374o.png)
+
+Client have internet connection, so this is enough to make 2-way connection - any request will be forwarded by tunnel.
+
+# Example usage - "SSH TeamViewer"
+Maybe not exactly, but it's absolutely doable with gotty. Of course - this is not really secure, but you can always forward it to your own service, not exposer.eu
+```
+docker run -p 80:8080 -e username=admin -e password=supersecretpassword -e gottyentry=/bin/ash -v /:/mounted -d --name gotty razikus/gotty:2.0.0-alpha.3
+```
+This will create gotty instance (terminal over http), volume your root / to /mounted (so you can access it from web)
+
+Next go to http://exposer.eu/superssh/80/localhost
+You will get docker command to expose your localhost:80
+
+In my case that was
+```
+docker run --name tunneler -e KEY="akFhSXJtU2FxcEpPYW9tZ0dZUnA7Kjo5OTk5O2xvY2FsaG9zdDs4MDtleHBvc2VyQHRlc3QyLmV4cG9zZXIuZXU7MzI4OTk=" --network=host --rm -d razikus/exposerclient:1.0
+```
+Execute it, and... That's it. My service was exposed to superssh.exposer.eu, then log with admin supersecretpassword
+
+Tadaam
+[![N|Solid](https://i.imgur.com/skCbOFm.png)](https://i.imgur.com/skCbOFm.png)
+
 # exposer.eu usage
 This is really simple service that i've builded for you to allow you expose the applications. 
 
