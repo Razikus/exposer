@@ -81,6 +81,10 @@ If you want to have persistent domain in exposer.eu, or you want to connect your
 
 And of course - any donate is really approciated.
 
+# ARM support
+From now also supporting ARM (builded on RaspberryPi 3)
+instead of razikus/exposerclient:1.0 use razikus/exposerclient:1.0-arm
+also instead of razikus/exposerserver:1.0 use razikus/exposeserver:1.0-arm
 
 # Who is using this?
 For example me, my company and my devices Skryba-1 (time and attendance registrator). So every client can just provide the key that i'm selling, and device will be exposed in the internet.
