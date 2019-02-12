@@ -15,6 +15,8 @@ Of course this is not my solution - this is builded in SSH.
 
 This is based on pure ssh, i think that it resolving lot of problem and i've decided to make this open source.
 
+Somebody noticed me, that there is similiar service - https://ngrok.com/
+
 # Server usage
 Server is just containerized sshd server with enabled port forwarding.
 On your server you can make the container with command:
