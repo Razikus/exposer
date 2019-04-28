@@ -62,24 +62,7 @@ Tadaam
 [![N|Solid](https://i.imgur.com/skCbOFm.png)](https://i.imgur.com/skCbOFm.png)
 
 # exposer.eu usage
-This is really simple service that i've builded for you to allow you expose the applications. 
-
-Go to page http://exposer.eu/test/80/localhost
-This will create for you a bunch of example command to expose on domain test.exposer.eu your http://localhost:80
-You can use then SSH command that is generated or just use docker command that i also provided.
-
-exposer.eu for now is working only with http requests. Don't worry - you can still expose your SSH with gotty (look at examples)
-
-Limitations: if somebody will choose the same domain as you it will be overriden.
-Any abuse of law will be reported & banned.
-
-If there will be too much abuses i will just close this service.
-
-I'm not guaranting that it will be working for you. Also i will implement auto removing containers if there will be too much.
-
-If you want to have persistent domain in exposer.eu, or you want to connect your own domain, please contact me on support@razniewski.eu - it cost 2€ per month. Of course then I'm guaranting that nobody will override it.
-
-And of course - any donate is really approciated.
+Ups not working anymore
 
 # ARM support
 From now also supporting ARM (builded on RaspberryPi 3).
